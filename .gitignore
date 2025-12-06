@@ -1,0 +1,11 @@
+/*
+
+# Ignore All But These Core Directories
+!config/
+!default/configs/
+!kubejs/
+!mods/
+
+# Ignore All But These Core Files
+
+!.gitignore
