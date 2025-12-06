@@ -2,7 +2,7 @@
 
 # Ignore All But These Core Directories
 !config/
-!default/configs/
+!defaultconfigs/
 !kubejs/
 !mods/
 
