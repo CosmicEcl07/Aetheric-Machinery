@@ -51,6 +51,12 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "exdeorum": {
+    "infested_leaves": true,
+    "barrel": true,
+    "crucible": true,
+    "sieve": true
+  },
   "gtceu": {
     "auto_output_info": true,
     "primitive_pump": true,
@@ -79,6 +85,9 @@
     "coordinates": false,
     "registry_name": "OFF",
     "mod_name": true
+  },
+  "gravestone": {
+    "grave": true
   },
   "balm": {
     "jade": true

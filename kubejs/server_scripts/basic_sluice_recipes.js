@@ -1,8 +1,9 @@
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.basic_sluice('basic_gravel_sluice')
-        .itemInputs('4x minecraft:gravel')
-        .itemOutputs('4x minecraft:sand')
-        .duration(200);
+        .itemInputs('minecraft:gravel')
+        .inputFluids('minecraft:water 100')
+        .chancedOutput('minecraft:sand', 4000, 0)
+        .duration(15);
 
 });
