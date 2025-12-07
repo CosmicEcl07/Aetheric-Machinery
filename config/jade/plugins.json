@@ -1,12 +1,15 @@
 {
+  "enderchests": {
+    "hud": true
+  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
     "harvest_tool.show_unbreakable": false,
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
-    "item_storage.normal_amount": 9,
     "item_storage": true,
+    "item_storage.normal_amount": 9,
     "harvest_tool": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
@@ -51,27 +54,38 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "endertanks": {
+    "hud.basic": true,
+    "hud": true,
+    "hud.status": true,
+    "hud.contents": true
+  },
   "exdeorum": {
     "infested_leaves": true,
     "barrel": true,
     "crucible": true,
     "sieve": true
   },
+  "shetiphiancore": {
+    "hud.rgb16": true,
+    "hud": true,
+    "hud.redstone": true
+  },
   "gtceu": {
-    "auto_output_info": true,
     "primitive_pump": true,
+    "auto_output_info": true,
     "workable_provider": true,
     "transformer": true,
     "controllable_provider": true,
-    "exhaust_vent_info": true,
     "me_pattern_buffer": true,
+    "exhaust_vent_info": true,
     "me_pattern_buffer_proxy": true,
     "multiblock_structure": true,
     "recipe_logic_provider": true,
     "maintenance_info": true,
     "machine_mode": true,
-    "steam_boiler_info": true,
     "electric_container_provider": true,
+    "steam_boiler_info": true,
     "recipe_output_info": true,
     "stained_color": true,
     "hazard_cleaner_provider": true,

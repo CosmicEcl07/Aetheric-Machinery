@@ -9,6 +9,6 @@
 # Ignore All But These Core Files
 
 !.gitignore
-config/oculus.properties
 config/jei/jei-client.ini
 config/jei/world/local/GTdev/bookmarks.ini
+config/oculus.properties

@@ -17,10 +17,12 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -0.5d
+			y: -1.5d
 		}
 		{
 			id: "233B4294D3292D2C"
+			shape: "gear"
+			size: 1.25d
 			tasks: [{
 				count: 8L
 				id: "3ECFB037AB93EB36"
@@ -28,8 +30,8 @@
 				type: "item"
 			}]
 			title: "Punching Your First Tree!"
-			x: 1.0d
-			y: -4.5d
+			x: 3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["233B4294D3292D2C"]
@@ -53,18 +55,112 @@
 				}
 			]
 			title: "Getting String"
-			x: 1.0d
+			x: 3.0d
 			y: -3.0d
 		}
 		{
-			id: "512192C1E654EF1B"
+			id: "2CD30778906B4456"
+			shape: "gear"
+			size: 1.25d
 			tasks: [{
-				id: "600E3C156DB4DD47"
-				item: "minecraft:spruce_log"
+				count: 4L
+				id: "6EB3D54AEBF85C98"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "havenpebbles:pebbles"
+					}
+				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.0d
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2CD30778906B4456"
+				"233B4294D3292D2C"
+			]
+			id: "51CAE0F6B2F0DFDE"
+			tasks: [{
+				id: "10876B0D82833CB2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "exdeorum:hammers"
+					}
+				}
+				type: "item"
+			}]
+			title: "HAMMAH!"
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["22E9A0D329C94BE9"]
+			id: "0F93DAEE746326E9"
+			tasks: [
+				{
+					count: 4L
+					id: "7462CBAF166D2C47"
+					item: "minecraft:string"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "16E05049B3D2A479"
+					item: "minecraft:white_wool"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0F93DAEE746326E9"]
+			dependency_requirement: "one_completed"
+			id: "77466C32E159E57A"
+			tasks: [{
+				id: "1A3B84571FC5C260"
+				item: "minecraft:white_bed"
+				type: "item"
+			}]
+			title: "EEPY TIMEEE"
+			x: 4.5d
+			y: -5.0d
+		}
+		{
+			id: "5AF2BE0B6E7264BD"
+			tasks: [
+				{
+					id: "0D8309425A6B2500"
+					item: "gtceu:primitive_sluice"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "13890D2E5A7C9283"
+					item: { Count: 9, id: "minecraft:stone_slab" }
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "7DDD3AD549D85AC5"
+					item: { Count: 21, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5CD8BAA0E229E58A"
+					item: { Count: 6, id: "minecraft:stone" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -7.0d
 		}
 	]
 	title: "The Start Of It All"

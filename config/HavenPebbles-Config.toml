@@ -18,19 +18,19 @@ deepslatePebbleWeight = 10
 dioritePebbleWeight = 10
 #The weight of dripstone pebbles. (1 = 100%)
 #Range: 0 ~ 100
-dripstonePebbleWeight = 10
+dripstonePebbleWeight = 0
 #The weight of granite pebbles. (1 = 100%)
 #Range: 0 ~ 100
 granitePebbleWeight = 10
 #The weight of tuff pebbles. (1 = 100%)
 #Range: 0 ~ 100
-tuffPebbleWeight = 10
+tuffPebbleWeight = 0
 #The weight of stone pebbles. (1 = 100%)
 #Range: 0 ~ 100
 stonePebbleWeight = 40
 #The weight of netherrack pebbles. (1 = 100%)
 #Range: 0 ~ 100
-netherrackPebbleWeight = 90
+netherrackPebbleWeight = 0
 #The weight of basalt pebbles. (1 = 100%)
 #Range: 0 ~ 100
 basaltPebbleWeight = 10
