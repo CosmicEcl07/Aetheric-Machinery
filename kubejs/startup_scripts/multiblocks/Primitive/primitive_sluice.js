@@ -15,7 +15,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('basic_sluice')
         .appearanceBlock(GTBlocks.TREATED_WOOD_PLANK)
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('PPPPPPP', 'EEEDDDD')
             .aisle('PPPPPPP', 'EC####D')
