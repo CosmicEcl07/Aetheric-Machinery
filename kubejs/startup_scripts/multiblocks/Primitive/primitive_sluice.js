@@ -17,16 +17,18 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .appearanceBlock(GTBlocks.TREATED_WOOD_PLANK)
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle('PPPPP', 'PPPPP')
-            .aisle('PPPPP', 'PC##P')
-            .aisle('PPPPP', 'PAPPP')
+            .aisle('PPPPPPP', 'EEEDDDD')
+            .aisle('PPPPPPP', 'EC####D')
+            .aisle('PPPPPPP', 'EAEDDDD')
             .where('A', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('P', Predicates.blocks(GTBlocks.TREATED_WOOD_PLANK.get()))        
+            .where('P', Predicates.blocks('minecraft:stone_bricks'))      
             .where('#', Predicates.any())   
             .where('C', Predicates.fluids('minecraft:water')) 
             .where('B', Predicates.blocks('gtceu:treated_wood_slab'))
+            .where('D', Predicates.blocks('minecraft:stone_slab'))
+            .where('E', Predicates.blocks('minecraft:stone'))
             .build())
-        .workableCasingRenderer('gtceu:block/treated_wood_planks',
+        .workableCasingRenderer('minecraft:block/stone',
         'gtceu:block/machines/sifter', false)
         .editableUI(
             global.ui_builder({

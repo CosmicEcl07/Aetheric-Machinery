@@ -1,6 +1,3 @@
 {
-
-    "block.gtceu.primitive_sluice" : "Primitive Sluice",
-    "gtceu.basic_sluice" : "Basic Sluice"
-
+    "gtceu.basic_sluice": "Primitive Sluice"
 }
