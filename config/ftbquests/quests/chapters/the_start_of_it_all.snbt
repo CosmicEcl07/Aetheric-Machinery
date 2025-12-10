@@ -17,7 +17,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -9.0d
+			y: -1.5d
 		}
 		{
 			id: "233B4294D3292D2C"
@@ -30,7 +30,7 @@
 				type: "item"
 			}]
 			title: "Punching Your First Tree!"
-			x: 1.875d
+			x: 1.75d
 			y: -2.5d
 		}
 		{
@@ -55,8 +55,8 @@
 				}
 			]
 			title: "Getting String"
-			x: 3.5d
-			y: -2.5d
+			x: 3.0d
+			y: -3.5d
 		}
 		{
 			id: "2CD30778906B4456"
@@ -75,7 +75,7 @@
 				type: "item"
 			}]
 			title: "ROCK AND STONEEE"
-			x: 0.0d
+			x: 0.25d
 			y: -2.5d
 		}
 		{
@@ -117,8 +117,8 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: -3.625d
+			x: 3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["0F93DAEE746326E9"]
@@ -130,8 +130,8 @@
 				type: "item"
 			}]
 			title: "EEPY TIMEEE"
-			x: 5.0d
-			y: -3.625d
+			x: 4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -139,10 +139,16 @@
 				"76142EB47056AB0E"
 				"5DCE4C6F78ECA53C"
 			]
+			description: [
+				"For now, you can move water in by hand, but this machine allows you to create a fluid input hatch, which will enable you to pull water into it automatically."
+				""
+				"However, if you are knowledgeable, you can also push and pull items/fluids in with LaserIO/Modular Routers through the controller itself."
+			]
 			icon: "gtceu:primitive_sluice"
 			id: "5AF2BE0B6E7264BD"
 			shape: "diamond"
 			size: 1.5d
+			subtitle: "If you look at this multiblock...."
 			tasks: [
 				{
 					id: "0D8309425A6B2500"
@@ -188,44 +194,40 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["233B4294D3292D2C"]
-			id: "3DB9E25284A63762"
-			tasks: [{
-				id: "04A16C6BD75F8E21"
-				item: {
-					Count: 1
-					id: "woodenbucket:wooden_bucket"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "Your First Fluids :)"
-			x: 2.5d
-			y: -3.625d
-		}
-		{
-			dependencies: ["3DB9E25284A63762"]
+			dependencies: ["53C628D51F740EAD"]
 			id: "5DCE4C6F78ECA53C"
-			tasks: [{
-				id: "75CEC467119C1818"
-				item: {
-					Count: 1
-					id: "woodenbucket:wooden_bucket"
-					tag: {
-						Damage: 0
-						Fluid: {
-							Amount: 1000
-							FluidName: "minecraft:water"
+			tasks: [
+				{
+					id: "75CEC467119C1818"
+					item: {
+						Count: 1
+						id: "woodenbucket:wooden_bucket"
+						tag: {
+							Damage: 0
+							Fluid: {
+								Amount: 1000
+								FluidName: "minecraft:water"
+							}
 						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "3C4BEA30E97EA1CF"
+					item: {
+						Count: 1
+						id: "woodenbucket:wooden_bucket"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "Aguaaleous"
 			x: 2.5d
-			y: -5.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["2CD30778906B4456"]
@@ -237,7 +239,7 @@
 			}]
 			title: "Smoking"
 			x: -1.0d
-			y: -3.625d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0F93DAEE746326E9"]
@@ -248,8 +250,8 @@
 				type: "item"
 			}]
 			title: "Siftin Through The Rough"
-			x: 3.5d
-			y: -5.0d
+			x: 1.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3E6E014831E5F51F"]
@@ -266,35 +268,221 @@
 		{
 			dependencies: ["5059AAD0321DED07"]
 			id: "62F23E179D0C7EC9"
+			shape: "square"
+			size: 1.0d
 			tasks: [{
 				id: "046CD3BA92365BF5"
 				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["51CAE0F6B2F0DFDE"]
+			id: "5059AAD0321DED07"
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				id: "1F2D288D47A92BBE"
+				item: "minecraft:gravel"
 				type: "item"
 			}]
 			x: -2.5d
 			y: -7.0d
 		}
 		{
-			dependencies: ["51CAE0F6B2F0DFDE"]
-			id: "5059AAD0321DED07"
-			tasks: [{
-				id: "1F2D288D47A92BBE"
-				item: "minecraft:gravel"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -7.0d
-		}
-		{
 			dependencies: ["62F23E179D0C7EC9"]
 			id: "79C4EFE4B207EB0E"
+			shape: "square"
+			size: 1.0d
 			tasks: [{
 				id: "05884C497D1065F3"
 				item: "exdeorum:dust"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.5d
 			y: -7.0d
+		}
+		{
+			dependencies: ["5059AAD0321DED07"]
+			id: "3D92CFCADA61716E"
+			size: 1.0d
+			tasks: [{
+				id: "6F15A65118DCFCE5"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5059AAD0321DED07"]
+			id: "3F9819E9547CB741"
+			size: 1.0d
+			tasks: [{
+				id: "7B2FFA7D2CFDA059"
+				item: "minecraft:raw_copper"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5059AAD0321DED07"]
+			id: "3D7CF4ACEB2C3B52"
+			size: 1.0d
+			tasks: [{
+				id: "27DDB6819096AC39"
+				item: "gtceu:raw_nickel"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["5059AAD0321DED07"]
+			id: "606A2D2818149AB2"
+			size: 1.0d
+			tasks: [{
+				id: "39A41300085120FC"
+				item: "gtceu:raw_tin"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["62F23E179D0C7EC9"]
+			id: "3D155EF921282D97"
+			size: 1.0d
+			tasks: [{
+				id: "598982D2C62155A0"
+				item: "minecraft:raw_gold"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["62F23E179D0C7EC9"]
+			id: "3262137461E75D62"
+			size: 1.0d
+			tasks: [{
+				id: "6124275D63F0ED9D"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["62F23E179D0C7EC9"]
+			id: "120512A7F83B0A05"
+			size: 1.0d
+			tasks: [{
+				id: "06FFA3A11BBBE4B2"
+				item: "minecraft:prismarine_shard"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["62F23E179D0C7EC9"]
+			id: "7D1645515432644C"
+			size: 1.0d
+			tasks: [{
+				id: "57881F25CB9FA41B"
+				item: "minecraft:prismarine_crystals"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["79C4EFE4B207EB0E"]
+			id: "0302EB71DAFC6538"
+			size: 1.0d
+			tasks: [{
+				id: "3A10DCAB3674BAD5"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["79C4EFE4B207EB0E"]
+			id: "23CFF4BCF5417635"
+			size: 1.0d
+			tasks: [{
+				id: "6085A1EDADA13A35"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["79C4EFE4B207EB0E"]
+			id: "0AA4FD9F1429EE25"
+			size: 1.0d
+			tasks: [{
+				id: "740B390AEC29115B"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["79C4EFE4B207EB0E"]
+			id: "700240B37674A92D"
+			size: 1.0d
+			tasks: [{
+				id: "6A069D84871B6835"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5DCE4C6F78ECA53C"]
+			description: ["Combine dust + water in this to get clay."]
+			id: "17B2A2EA9A64D435"
+			subtitle: "Factorio Refrence??"
+			tasks: [{
+				id: "5FCBCD3C4B948BA8"
+				item: "exdeorum:oak_barrel"
+				type: "item"
+			}]
+			title: "Fluid Handling"
+			x: 2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["233B4294D3292D2C"]
+			id: "53C628D51F740EAD"
+			tasks: [{
+				id: "54C8D00601A9412A"
+				item: "exdeorum:oak_crucible"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["17B2A2EA9A64D435"]
+			id: "41E81CC9B801147F"
+			tasks: [{
+				id: "6AB43E3993F19663"
+				item: "minecraft:clay"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -8.0d
 		}
 	]
 	title: "The Start Of It All"

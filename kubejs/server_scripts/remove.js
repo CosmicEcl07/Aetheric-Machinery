@@ -18,6 +18,9 @@ ServerEvents.recipes(event => {
         ]}
     })
 
-    //event.remove({   });
-    
-})
+
+    // LaserIO Removals
+    event.remove('laserio:logic_chip_raw');
+
+
+});
