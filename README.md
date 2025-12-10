@@ -5,3 +5,5 @@ This is a passion project that is currently in what i would consider a very earl
 If you wish to follow along you may do so here, this pack will be released on github as well as on curseforge in later stages of development.
 
 https://discord.gg/xa858BdvEJ
+
+Credit to Star Technology Dev Team for some scripts used in development.
