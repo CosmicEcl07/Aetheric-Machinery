@@ -11,6 +11,13 @@
   "ae2:power_storage": null,
   "ae2:server_data": null,
   "balm:jade": null,
+  "enderchests:hud": null,
+  "endertanks:hud": null,
+  "exdeorum:barrel": null,
+  "exdeorum:crucible": null,
+  "exdeorum:infested_leaves": null,
+  "exdeorum:sieve": null,
+  "gravestone:grave": null,
   "gtceu:auto_output_info": null,
   "gtceu:cable_info": null,
   "gtceu:controllable_provider": null,
@@ -78,5 +85,6 @@
   "minecraft:total_enchantment_power": null,
   "minecraft:villager_profession": null,
   "minecraft:waxed": null,
-  "minecraft:zombie_villager": null
+  "minecraft:zombie_villager": null,
+  "shetiphiancore:hud": null
 }
