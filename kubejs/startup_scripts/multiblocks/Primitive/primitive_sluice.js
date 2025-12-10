@@ -21,6 +21,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('PPPPPPP', 'EAEDDDD')
             .where('A', Predicates.controller(Predicates.blocks(definition.get())))
             .where('P', Predicates.blocks('minecraft:stone_bricks'))      
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
             .where('#', Predicates.any())   
             .where('C', Predicates.fluids('minecraft:water')) 
             .where('B', Predicates.blocks('gtceu:treated_wood_slab'))

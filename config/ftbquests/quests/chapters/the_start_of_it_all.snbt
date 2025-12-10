@@ -17,7 +17,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -1.5d
+			y: -9.0d
 		}
 		{
 			id: "233B4294D3292D2C"
@@ -30,8 +30,8 @@
 				type: "item"
 			}]
 			title: "Punching Your First Tree!"
-			x: 3.0d
-			y: -1.0d
+			x: 1.875d
+			y: -2.5d
 		}
 		{
 			dependencies: ["233B4294D3292D2C"]
@@ -55,8 +55,8 @@
 				}
 			]
 			title: "Getting String"
-			x: 3.0d
-			y: -3.0d
+			x: 3.5d
+			y: -2.5d
 		}
 		{
 			id: "2CD30778906B4456"
@@ -74,8 +74,9 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: -1.0d
+			title: "ROCK AND STONEEE"
+			x: 0.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -96,7 +97,7 @@
 			}]
 			title: "HAMMAH!"
 			x: 1.0d
-			y: -5.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["22E9A0D329C94BE9"]
@@ -116,8 +117,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: -5.0d
+			x: 3.5d
+			y: -3.625d
 		}
 		{
 			dependencies: ["0F93DAEE746326E9"]
@@ -129,11 +130,19 @@
 				type: "item"
 			}]
 			title: "EEPY TIMEEE"
-			x: 4.5d
-			y: -5.0d
+			x: 5.0d
+			y: -3.625d
 		}
 		{
+			dependencies: [
+				"72156A97FB6A053E"
+				"76142EB47056AB0E"
+				"5DCE4C6F78ECA53C"
+			]
+			icon: "gtceu:primitive_sluice"
 			id: "5AF2BE0B6E7264BD"
+			shape: "diamond"
+			size: 1.5d
 			tasks: [
 				{
 					id: "0D8309425A6B2500"
@@ -158,8 +167,133 @@
 					item: { Count: 6, id: "minecraft:stone" }
 					type: "item"
 				}
+				{
+					id: "0E338BAE814E52E1"
+					item: {
+						Count: 1
+						id: "woodenbucket:wooden_bucket"
+						tag: {
+							Damage: 0
+							Fluid: {
+								Amount: 1000
+								FluidName: "minecraft:water"
+							}
+						}
+					}
+					type: "item"
+				}
 			]
+			title: "Your First Machine"
 			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["233B4294D3292D2C"]
+			id: "3DB9E25284A63762"
+			tasks: [{
+				id: "04A16C6BD75F8E21"
+				item: {
+					Count: 1
+					id: "woodenbucket:wooden_bucket"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Your First Fluids :)"
+			x: 2.5d
+			y: -3.625d
+		}
+		{
+			dependencies: ["3DB9E25284A63762"]
+			id: "5DCE4C6F78ECA53C"
+			tasks: [{
+				id: "75CEC467119C1818"
+				item: {
+					Count: 1
+					id: "woodenbucket:wooden_bucket"
+					tag: {
+						Damage: 0
+						Fluid: {
+							Amount: 1000
+							FluidName: "minecraft:water"
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Aguaaleous"
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2CD30778906B4456"]
+			id: "3E6E014831E5F51F"
+			tasks: [{
+				id: "68FABE125AB93919"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "Smoking"
+			x: -1.0d
+			y: -3.625d
+		}
+		{
+			dependencies: ["0F93DAEE746326E9"]
+			id: "72156A97FB6A053E"
+			tasks: [{
+				id: "034FA6BEF6F4558D"
+				item: "exdeorum:string_mesh"
+				type: "item"
+			}]
+			title: "Siftin Through The Rough"
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3E6E014831E5F51F"]
+			id: "76142EB47056AB0E"
+			subtitle: "You will need alot of this"
+			tasks: [{
+				id: "1ADC5AD2AEAB1BD8"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5059AAD0321DED07"]
+			id: "62F23E179D0C7EC9"
+			tasks: [{
+				id: "046CD3BA92365BF5"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["51CAE0F6B2F0DFDE"]
+			id: "5059AAD0321DED07"
+			tasks: [{
+				id: "1F2D288D47A92BBE"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["62F23E179D0C7EC9"]
+			id: "79C4EFE4B207EB0E"
+			tasks: [{
+				id: "05884C497D1065F3"
+				item: "exdeorum:dust"
+				type: "item"
+			}]
+			x: -4.0d
 			y: -7.0d
 		}
 	]
