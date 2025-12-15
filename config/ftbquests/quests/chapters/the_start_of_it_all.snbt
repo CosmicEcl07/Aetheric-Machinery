@@ -484,6 +484,151 @@
 			x: -0.5d
 			y: -8.0d
 		}
+		{
+			dependencies: ["41E81CC9B801147F"]
+			description: [
+				"GT Tools are used for many different things, mostly in the early game being used for crafting, but tools such as a.."
+				""
+				"&4Wrench&r, &cScrewdriver&r, &6Mallet&r, and &aWirecutters&r"
+				""
+				"Will be used to configure and modify your machines throughout the whole pack so you will want to make sure you make good tools of those types at least."
+			]
+			id: "605C6C4A1E76ADD9"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Mix and match!"
+			tasks: [
+				{
+					id: "24E77B0CF46703B9"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/hammers"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "56806D6D96E55DF7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mortars"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2D01AFC23A2DD340"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/screwdrivers"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "00BEBB7041AA3D30"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mallets"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6AAF0A267860A3ED"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/saws"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "552B34390B2ADE35"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/wrenches"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1F5FCA4B9F8E63B7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/screwdrivers"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Your First Tools"
+			x: 1.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["605C6C4A1E76ADD9"]
+			description: ["This is your second machine, primarily used for steel as well as glass, you will probably want to make more then one of these."]
+			id: "1C957A58064E547F"
+			shape: "square"
+			subtitle: "Red Hot"
+			tasks: [{
+				id: "6B13C1F3BABF0812"
+				item: "gtceu:sturdy_kiln"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["1C957A58064E547F"]
+			id: "6DD1113C4C714607"
+			tasks: [{
+				id: "5A79383B806222B4"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["1C957A58064E547F"]
+			id: "32329E3CB4A8D005"
+			tasks: [
+				{
+					id: "3DBA23A8886F8819"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "65E4362B6BD54851"
+					item: "gtceu:glass_dust"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -12.0d
+		}
 	]
 	title: "The Start Of It All"
 }
