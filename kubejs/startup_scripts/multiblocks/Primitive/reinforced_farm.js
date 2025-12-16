@@ -1,16 +1,25 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
-    event.create('hardened_farm')
+    event.create('reinforced_farm')
         .category('primitive')
         .setEUIO('in')
-        .setMaxIOSize(2, 2, 1, 0)
-        .setSound(GTSoundEntries.BATH);
+        .setMaxIOSize(1, 2, 0, 0)
+        .setSound(GTSoundEntries.BATH)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_CUTTER , FillDirection.LEFT_TO_RIGHT);
+
+    event.create('reinforced_tree_farm')
+        .category('primitive')
+        .setEUIO('in')
+        .setMaxIOSize(1, 4, 0, 0)
+        .setSound(GTSoundEntries.BATH)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_CUTTER , FillDirection.LEFT_TO_RIGHT);
+
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('reinforced_farm', 'primitive')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('hardened_farm')
+        .recipeType(['reinforced_farm', 'reinforced_tree_farm'])
         .appearanceBlock(() => Block.getBlock('minecraft:stone'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("ABBBBBBBABBBBBBBA", "CDDDDDDDCDDDDDDDC", "#################", "#################", "#################", "#################", "#################", "#################", "#################") 
@@ -36,6 +45,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("H", Predicates.blocks("minecraft:water"))
             .build())
 
-        .workableCasingRenderer('minecraft:block/stone', 'gtceu:block/multiblock/primitive_blast_furnace', false)
+        .workableCasingRenderer('minecraft:block/stone', 'gtceu:block/machines/cutter', false)
 });
 

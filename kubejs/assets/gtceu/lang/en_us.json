@@ -2,5 +2,7 @@
     "block.gtceu.primitive_sluice": "Primitive Sluice",
     "gtceu.basic_sluice": "Basic Sluice",
     "block.gtceu.sturdy_kiln": "Sturdy Kiln",
-    "gtceu.sturdy_kiln": "Sturdy Kiln"
+    "gtceu.sturdy_kiln": "Sturdy Kiln",
+    "block.gtceu.reinforced_farm": "Reinforced Farm",
+    "gtceu.reinforced_farm": "Reinforced Farm"
 }

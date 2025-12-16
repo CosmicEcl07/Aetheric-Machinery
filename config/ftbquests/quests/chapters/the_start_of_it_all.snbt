@@ -485,7 +485,7 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["41E81CC9B801147F"]
+			dependencies: ["5AF2BE0B6E7264BD"]
 			description: [
 				"GT Tools are used for many different things, mostly in the early game being used for crafting, but tools such as a.."
 				""
@@ -494,6 +494,18 @@
 				"Will be used to configure and modify your machines throughout the whole pack so you will want to make sure you make good tools of those types at least."
 			]
 			id: "605C6C4A1E76ADD9"
+			rewards: [
+				{
+					id: "4D36D9398C022D9B"
+					item: "laserio:laser_wrench"
+					type: "item"
+				}
+				{
+					id: "6EE3A681B2D241DB"
+					item: "gtceu:terminal"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			subtitle: "Mix and match!"
@@ -630,6 +642,7 @@
 			y: -12.0d
 		}
 		{
+			dependencies: ["5AF2BE0B6E7264BD"]
 			description: ["Use this + laserIO or Modular Routers to move water automaticlly into your sluices!"]
 			id: "7A479BE92DB60595"
 			subtitle: "put the bucket back whaltu"
@@ -641,6 +654,330 @@
 			title: "Wamter"
 			x: -0.5d
 			y: -7.0d
+		}
+		{
+			dependencies: ["605C6C4A1E76ADD9"]
+			description: ["This is a tool from GT, Rightclicking it on a controller with items in your inventory results in it autoplacing blocks based on the controller you click on."]
+			hide_until_deps_complete: false
+			icon: "gtceu:terminal"
+			id: "0396C8DA5CE57140"
+			subtitle: "Usefull!"
+			tasks: [{
+				id: "5F653243FD506F9E"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["605C6C4A1E76ADD9"]
+			id: "3157FAA078ACDDEF"
+			subtitle: "You will use these alot in ULV-LV"
+			tasks: [
+				{
+					count: 3L
+					id: "4AB40A77C6C3881A"
+					item: "gtceu:bronze_dust"
+					type: "item"
+				}
+				{
+					id: "657F6A25AE0429E1"
+					item: "gtceu:red_alloy_dust"
+					type: "item"
+				}
+			]
+			title: "Rock Smash!"
+			x: -1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["3157FAA078ACDDEF"]
+			id: "529EA7ED3DD1AE78"
+			shape: "square"
+			subtitle: "Steam is the energy for the steam age."
+			tasks: [{
+				id: "2E3FADE94C900B9B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_solid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_solid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_liquid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_liquid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_solar_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_solar_boiler"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Boiling Water"
+			x: -1.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["529EA7ED3DD1AE78"]
+			description: ["these are used to compress different items, the main one will be wood pulp into boards for your &9first electronic&r &4circuts&r."]
+			id: "425D729FEBB54464"
+			subtitle: "Smush Smash"
+			tasks: [{
+				id: "685385282FA8CDC0"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_compressor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_compressor"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Compressors"
+			x: 2.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["529EA7ED3DD1AE78"]
+			description: ["Another way to bypass GT tools, it also can turn some things into dust at higher rates or items you &4&ncant&r&r by hand, one of which will be logs for wood pulp, again for your &1first&r &4circuits&r"]
+			id: "6B3BDEA235F2F5DF"
+			subtitle: "Gring, Grind, Toil And Trouble.."
+			tasks: [{
+				id: "3F3C9A75707D8261"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_macerator"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_macerator"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Crushing It!"
+			x: 0.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["529EA7ED3DD1AE78"]
+			description: ["These can be used as a way to bypass the mortar and pestle as well as forming glass into more complex shapes also for &4Circuits&r "]
+			id: "7CC10F95A1FD8A2D"
+			subtitle: "AAAAAAAAAAAA"
+			tasks: [{
+				id: "4700E2DBDB245B7A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_alloy_smelter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_alloy_smelter"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "It Burnssss"
+			x: 1.0d
+			y: -14.5d
+		}
+		{
+			dependencies: [
+				"425D729FEBB54464"
+				"6B3BDEA235F2F5DF"
+			]
+			id: "7A1839ECA1954368"
+			tasks: [
+				{
+					id: "5000DC121019C3F4"
+					item: "gtceu:resin_circuit_board"
+					type: "item"
+				}
+				{
+					id: "006B2A08C869A947"
+					item: "gtceu:resin_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "The start of the zaps"
+			x: 0.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["7CC10F95A1FD8A2D"]
+			id: "7BD161F74459675C"
+			tasks: [{
+				id: "495C84B73CC59FF2"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -17.0d
+		}
+		{
+			dependencies: [
+				"7A1839ECA1954368"
+				"7BD161F74459675C"
+				"1904F2F1A84518EE"
+			]
+			description: ["Your first big step into getting more advanced machines, enabling you to make cheaper recipes for all type of components, as well as no longer having to use those pesky GT tools."]
+			id: "49A4FFDB74B6F305"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "FINALLYYY"
+			tasks: [{
+				id: "4FD12EFCFB46B3E4"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			title: "The First Big Step.."
+			x: 1.0d
+			y: -19.5d
+		}
+		{
+			dependencies: ["6B3BDEA235F2F5DF"]
+			id: "1904F2F1A84518EE"
+			tasks: [{
+				id: "2EEAEEA42F176A4D"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -17.0d
+		}
+		{
+			dependencies: [
+				"46E17C76CFE663CB"
+				"259AA615479A7A28"
+			]
+			description: ["Used to grow plants, as well as trees (at a slow rate comparatively)"]
+			id: "066906D4E4F3F396"
+			shape: "diamond"
+			subtitle: "Let it grow.."
+			tasks: [{
+				id: "63B8704D703064DE"
+				item: "gtceu:reinforced_farm"
+				type: "item"
+			}]
+			title: "Lorax"
+			x: 3.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["529EA7ED3DD1AE78"]
+			id: "46E17C76CFE663CB"
+			tasks: [
+				{
+					id: "2F731D3F163E4CD8"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "755D8D936C35395A"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["529EA7ED3DD1AE78"]
+			id: "08762C82578F39A9"
+			shape: "diamond"
+			tasks: [{
+				id: "14AFBDBF65691FB2"
+				item: "gtceu:steam_oven"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["529EA7ED3DD1AE78"]
+			id: "3ABB6927EC0CA4DC"
+			shape: "diamond"
+			tasks: [{
+				id: "25EC88B5B26AF8F8"
+				item: "gtceu:steam_grinder"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["41E81CC9B801147F"]
+			description: ["A mod you will probably want to use, &5Modular Routers&r is also in here for those that truly despise LaserIO but it is something that will be very helpfull with &6automating&r processes."]
+			icon: "laserio:laser_wrench"
+			id: "215D3C36E09561A9"
+			subtitle: "Logistic Headaches"
+			tasks: [{
+				id: "6CCD998CFF96A64E"
+				type: "checkmark"
+			}]
+			title: "Laser IO"
+			x: -0.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["605C6C4A1E76ADD9"]
+			id: "259AA615479A7A28"
+			tasks: [
+				{
+					id: "03D16B6A0BD10343"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "01BF8CECC46A087B"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -9.5d
 		}
 	]
 	title: "The Start Of It All"

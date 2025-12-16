@@ -1,0 +1,57 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_electric_age"
+	group: "3C7CFABE4BC7F6CE"
+	icon: "gtceu:basic_electronic_circuit"
+	id: "19BD74F349AAE0AF"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["49A4FFDB74B6F305"]
+		id: "7DEF6D5DD2FA479A"
+		shape: "gear"
+		size: 2.0d
+		subtitle: "These are all pretty cool machines"
+		tasks: [{
+			id: "33D3094F20F0DA2F"
+			item: {
+				Count: 1
+				id: "itemfilters:or"
+				tag: {
+					items: [
+						{
+							Count: 1b
+							id: "gtceu:lv_wiremill"
+						}
+						{
+							Count: 1b
+							id: "gtceu:lv_polarizer"
+						}
+						{
+							Count: 1b
+							id: "gtceu:lv_bender"
+						}
+						{
+							Count: 1b
+							id: "gtceu:lv_lathe"
+						}
+						{
+							Count: 1b
+							id: "gtceu:lv_extractor"
+						}
+						{
+							Count: 1b
+							id: "gtceu:lv_assembler"
+						}
+					]
+				}
+			}
+			type: "item"
+		}]
+		title: "Nothing here to see"
+		x: 0.5d
+		y: 0.0d
+	}]
+	title: "The Electric Age"
+}

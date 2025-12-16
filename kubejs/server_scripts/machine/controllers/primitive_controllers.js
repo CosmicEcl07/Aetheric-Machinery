@@ -26,5 +26,17 @@ ServerEvents.recipes(event => {
         D: 'minecraft:campfire'
 
         });
-    
+
+    event.shaped('gtceu:reinforced_farm', [
+        'ABA',
+        'CDC',
+        'EEE'],{
+            
+        A: 'minecraft:stone_stairs',
+        B: 'minecraft:glass',
+        C: 'gtceu:treated_wood_frame',
+        D: '#minecraft:saplings',
+        E: 'minecraft:stone_bricks'
+
+        });
 });

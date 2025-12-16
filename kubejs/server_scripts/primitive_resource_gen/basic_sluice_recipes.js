@@ -42,7 +42,18 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.basic_sluice('basic_coarse_dirt_sluice')
         .itemInputs('4x minecraft:coarse_dirt')
-        .itemOutputsRanged('minecraft:dirt', 1, 4)
-        .itemOutputsRanged('minecraft:gravel', 1, 4)
+        .itemOutputsRanged('minecraft:dirt', 2, 4)
+        .itemOutputsRanged('minecraft:gravel', 1, 2)
+        .duration(time)
+
+    event.recipes.gtceu.basic_sluice('basic_rooted_dirt_sluice')
+        .itemInputs('minecraft:rooted_dirt')
+        .chancedOutput('minecraft:spruce_sapling', 1000, 0)
+        .chancedOutput('minecraft:birch_sapling', 1000, 0)
+        .chancedOutput('minecraft:jungle_sapling', 1000, 0)
+        .chancedOutput('minecraft:acacia_sapling', 1000, 0)
+        .chancedOutput('minecraft:dark_oak_sapling', 1000, 0)
+        .chancedOutput('minecraft:cherry_sapling', 1000, 0)
         .duration(time)
 });
+
