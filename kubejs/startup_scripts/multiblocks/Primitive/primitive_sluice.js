@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('basic_sluice')
         .category('primitive')
         .setEUIO('in')
-        .setMaxIOSize(1, 4, 1, 0)
+        .setMaxIOSize(1, 6, 1, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_SIFT , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH);
 
@@ -48,10 +48,13 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 				],
                 outputs: [
                     
-                        {type: 'item', index: 0, pos: [120, 10], texture: GuiTextures.PRIMITIVE_SLOT },
-                        {type: 'item', index: 1, pos: [138, 10], texture: GuiTextures.PRIMITIVE_SLOT },
-                        {type: 'item', index: 2, pos: [120, 28], texture: GuiTextures.PRIMITIVE_SLOT },
-                        {type: 'item', index: 3, pos: [138, 28], texture: GuiTextures.PRIMITIVE_SLOT },
+                        {type: 'item', index: 0, pos: [102, 10], texture: GuiTextures.PRIMITIVE_SLOT },
+                        {type: 'item', index: 1, pos: [102, 28], texture: GuiTextures.PRIMITIVE_SLOT },
+                        {type: 'item', index: 2, pos: [120, 10], texture: GuiTextures.PRIMITIVE_SLOT },
+                        {type: 'item', index: 3, pos: [120, 28], texture: GuiTextures.PRIMITIVE_SLOT },
+                        {type: 'item', index: 4, pos: [138, 10], texture: GuiTextures.PRIMITIVE_SLOT },
+                        {type: 'item', index: 5, pos: [138, 28], texture: GuiTextures.PRIMITIVE_SLOT }
+                        
                         
                 ]
 

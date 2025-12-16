@@ -629,6 +629,19 @@
 			x: 2.0d
 			y: -12.0d
 		}
+		{
+			description: ["Use this + laserIO or Modular Routers to move water automaticlly into your sluices!"]
+			id: "7A479BE92DB60595"
+			subtitle: "put the bucket back whaltu"
+			tasks: [{
+				id: "629D429F7183DF98"
+				item: "watersources:water_source_tier_1"
+				type: "item"
+			}]
+			title: "Wamter"
+			x: -0.5d
+			y: -7.0d
+		}
 	]
 	title: "The Start Of It All"
 }

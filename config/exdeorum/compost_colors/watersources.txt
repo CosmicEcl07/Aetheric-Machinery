@@ -1,0 +1,5 @@
+// Compost colors for watersources. You may add your own colors, change existing ones, or remove colors that aren't needed.
+diamond_upgrade, #62fff0
+gold_upgrade, #ffe440
+iron_upgrade, #e1e0e0
+netherite_upgrade, #8c7551
