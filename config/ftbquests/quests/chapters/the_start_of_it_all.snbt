@@ -1,0 +1,988 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_start_of_it_all"
+	group: "3C7CFABE4BC7F6CE"
+	id: "60815EE5DE640CCF"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7587B73B299190C5"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "1817B44D8E45B10B"
+				item: "minecraft:oak_planks"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			id: "233B4294D3292D2C"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				count: 8L
+				id: "3ECFB037AB93EB36"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			title: "Punching Your First Tree!"
+			x: 1.75d
+			y: -2.5d
+		}
+		{
+			dependencies: ["233B4294D3292D2C"]
+			id: "22E9A0D329C94BE9"
+			tasks: [
+				{
+					id: "44707F121EC53E9D"
+					item: {
+						Count: 1
+						id: "exdeorum:crook"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0FA532C3B175C3C0"
+					item: "exdeorum:silk_worm"
+					type: "item"
+				}
+			]
+			title: "Getting String"
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			id: "2CD30778906B4456"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				count: 4L
+				id: "6EB3D54AEBF85C98"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "havenpebbles:pebbles"
+					}
+				}
+				type: "item"
+			}]
+			title: "ROCK AND STONEEE"
+			x: 0.25d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"2CD30778906B4456"
+				"233B4294D3292D2C"
+			]
+			id: "51CAE0F6B2F0DFDE"
+			tasks: [{
+				id: "10876B0D82833CB2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "exdeorum:hammers"
+					}
+				}
+				type: "item"
+			}]
+			title: "HAMMAH!"
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["22E9A0D329C94BE9"]
+			id: "0F93DAEE746326E9"
+			tasks: [
+				{
+					count: 4L
+					id: "7462CBAF166D2C47"
+					item: "minecraft:string"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "16E05049B3D2A479"
+					item: "minecraft:white_wool"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0F93DAEE746326E9"]
+			dependency_requirement: "one_completed"
+			id: "77466C32E159E57A"
+			tasks: [{
+				id: "1A3B84571FC5C260"
+				item: "minecraft:white_bed"
+				type: "item"
+			}]
+			title: "EEPY TIMEEE"
+			x: 4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"72156A97FB6A053E"
+				"76142EB47056AB0E"
+				"5DCE4C6F78ECA53C"
+			]
+			description: [
+				"For now, you can move water in by hand, but this machine allows you to create a fluid input hatch, which will enable you to pull water into it automatically."
+				""
+				"However, if you are knowledgeable, you can also push and pull items/fluids in with LaserIO/Modular Routers through the controller itself."
+			]
+			icon: "gtceu:primitive_sluice"
+			id: "5AF2BE0B6E7264BD"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "If you look at this multiblock...."
+			tasks: [
+				{
+					id: "0D8309425A6B2500"
+					item: "gtceu:primitive_sluice"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "13890D2E5A7C9283"
+					item: { Count: 9, id: "minecraft:stone_slab" }
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "7DDD3AD549D85AC5"
+					item: { Count: 21, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5CD8BAA0E229E58A"
+					item: { Count: 6, id: "minecraft:stone" }
+					type: "item"
+				}
+				{
+					id: "0E338BAE814E52E1"
+					item: {
+						Count: 1
+						id: "woodenbucket:wooden_bucket"
+						tag: {
+							Damage: 0
+							Fluid: {
+								Amount: 1000
+								FluidName: "minecraft:water"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Your First Machine"
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["53C628D51F740EAD"]
+			id: "5DCE4C6F78ECA53C"
+			tasks: [
+				{
+					id: "75CEC467119C1818"
+					item: {
+						Count: 1
+						id: "woodenbucket:wooden_bucket"
+						tag: {
+							Damage: 0
+							Fluid: {
+								Amount: 1000
+								FluidName: "minecraft:water"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3C4BEA30E97EA1CF"
+					item: {
+						Count: 1
+						id: "woodenbucket:wooden_bucket"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Aguaaleous"
+			x: 2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2CD30778906B4456"]
+			id: "3E6E014831E5F51F"
+			tasks: [{
+				id: "68FABE125AB93919"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "Smoking"
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0F93DAEE746326E9"]
+			id: "72156A97FB6A053E"
+			tasks: [{
+				id: "034FA6BEF6F4558D"
+				item: "exdeorum:string_mesh"
+				type: "item"
+			}]
+			title: "Siftin Through The Rough"
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3E6E014831E5F51F"]
+			id: "76142EB47056AB0E"
+			subtitle: "You will need alot of this"
+			tasks: [{
+				id: "1ADC5AD2AEAB1BD8"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5059AAD0321DED07"]
+			id: "62F23E179D0C7EC9"
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				id: "046CD3BA92365BF5"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["51CAE0F6B2F0DFDE"]
+			id: "5059AAD0321DED07"
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				id: "1F2D288D47A92BBE"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["62F23E179D0C7EC9"]
+			id: "79C4EFE4B207EB0E"
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				id: "05884C497D1065F3"
+				item: "exdeorum:dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5059AAD0321DED07"]
+			id: "3D92CFCADA61716E"
+			size: 1.0d
+			tasks: [{
+				id: "6F15A65118DCFCE5"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5059AAD0321DED07"]
+			id: "3F9819E9547CB741"
+			size: 1.0d
+			tasks: [{
+				id: "7B2FFA7D2CFDA059"
+				item: "minecraft:raw_copper"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5059AAD0321DED07"]
+			id: "3D7CF4ACEB2C3B52"
+			size: 1.0d
+			tasks: [{
+				id: "27DDB6819096AC39"
+				item: "gtceu:raw_nickel"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["5059AAD0321DED07"]
+			id: "606A2D2818149AB2"
+			size: 1.0d
+			tasks: [{
+				id: "39A41300085120FC"
+				item: "gtceu:raw_tin"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["62F23E179D0C7EC9"]
+			id: "3D155EF921282D97"
+			size: 1.0d
+			tasks: [{
+				id: "598982D2C62155A0"
+				item: "minecraft:raw_gold"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["62F23E179D0C7EC9"]
+			id: "3262137461E75D62"
+			size: 1.0d
+			tasks: [{
+				id: "6124275D63F0ED9D"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["62F23E179D0C7EC9"]
+			id: "120512A7F83B0A05"
+			size: 1.0d
+			tasks: [{
+				id: "06FFA3A11BBBE4B2"
+				item: "minecraft:prismarine_shard"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["62F23E179D0C7EC9"]
+			id: "7D1645515432644C"
+			size: 1.0d
+			tasks: [{
+				id: "57881F25CB9FA41B"
+				item: "minecraft:prismarine_crystals"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["79C4EFE4B207EB0E"]
+			id: "0302EB71DAFC6538"
+			size: 1.0d
+			tasks: [{
+				id: "3A10DCAB3674BAD5"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["79C4EFE4B207EB0E"]
+			id: "23CFF4BCF5417635"
+			size: 1.0d
+			tasks: [{
+				id: "6085A1EDADA13A35"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["79C4EFE4B207EB0E"]
+			id: "0AA4FD9F1429EE25"
+			size: 1.0d
+			tasks: [{
+				id: "740B390AEC29115B"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["79C4EFE4B207EB0E"]
+			id: "700240B37674A92D"
+			size: 1.0d
+			tasks: [{
+				id: "6A069D84871B6835"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5DCE4C6F78ECA53C"]
+			description: ["Combine dust + water in this to get clay."]
+			id: "17B2A2EA9A64D435"
+			subtitle: "Factorio Refrence??"
+			tasks: [{
+				id: "5FCBCD3C4B948BA8"
+				item: "exdeorum:oak_barrel"
+				type: "item"
+			}]
+			title: "Fluid Handling"
+			x: 2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["233B4294D3292D2C"]
+			id: "53C628D51F740EAD"
+			tasks: [{
+				id: "54C8D00601A9412A"
+				item: "exdeorum:oak_crucible"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["17B2A2EA9A64D435"]
+			id: "41E81CC9B801147F"
+			tasks: [{
+				id: "6AB43E3993F19663"
+				item: "minecraft:clay"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5AF2BE0B6E7264BD"]
+			description: [
+				"GT Tools are used for many different things, mostly in the early game being used for crafting, but tools such as a.."
+				""
+				"&4Wrench&r, &cScrewdriver&r, &6Mallet&r, and &aWirecutters&r"
+				""
+				"Will be used to configure and modify your machines throughout the whole pack so you will want to make sure you make good tools of those types at least."
+			]
+			id: "605C6C4A1E76ADD9"
+			rewards: [
+				{
+					id: "4D36D9398C022D9B"
+					item: "laserio:laser_wrench"
+					type: "item"
+				}
+				{
+					id: "6EE3A681B2D241DB"
+					item: "gtceu:terminal"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Mix and match!"
+			tasks: [
+				{
+					id: "24E77B0CF46703B9"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/hammers"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "56806D6D96E55DF7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mortars"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2D01AFC23A2DD340"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/screwdrivers"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "00BEBB7041AA3D30"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mallets"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6AAF0A267860A3ED"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/saws"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "552B34390B2ADE35"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/wrenches"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1F5FCA4B9F8E63B7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/screwdrivers"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Your First Tools"
+			x: 1.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["605C6C4A1E76ADD9"]
+			description: ["This is your second machine, primarily used for steel as well as glass, you will probably want to make more then one of these."]
+			id: "1C957A58064E547F"
+			shape: "square"
+			subtitle: "Red Hot"
+			tasks: [{
+				id: "6B13C1F3BABF0812"
+				item: "gtceu:sturdy_kiln"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["1C957A58064E547F"]
+			id: "6DD1113C4C714607"
+			tasks: [{
+				id: "5A79383B806222B4"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["1C957A58064E547F"]
+			id: "32329E3CB4A8D005"
+			tasks: [
+				{
+					id: "3DBA23A8886F8819"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "65E4362B6BD54851"
+					item: "gtceu:glass_dust"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["5AF2BE0B6E7264BD"]
+			description: ["Use this + laserIO or Modular Routers to move water automaticlly into your sluices!"]
+			id: "7A479BE92DB60595"
+			subtitle: "put the bucket back whaltu"
+			tasks: [{
+				id: "629D429F7183DF98"
+				item: "watersources:water_source_tier_1"
+				type: "item"
+			}]
+			title: "Wamter"
+			x: -0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["605C6C4A1E76ADD9"]
+			description: ["This is a tool from GT, Rightclicking it on a controller with items in your inventory results in it autoplacing blocks based on the controller you click on."]
+			hide_until_deps_complete: false
+			icon: "gtceu:terminal"
+			id: "0396C8DA5CE57140"
+			subtitle: "Usefull!"
+			tasks: [{
+				id: "5F653243FD506F9E"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["605C6C4A1E76ADD9"]
+			id: "3157FAA078ACDDEF"
+			subtitle: "You will use these alot in ULV-LV"
+			tasks: [
+				{
+					count: 3L
+					id: "4AB40A77C6C3881A"
+					item: "gtceu:bronze_dust"
+					type: "item"
+				}
+				{
+					id: "657F6A25AE0429E1"
+					item: "gtceu:red_alloy_dust"
+					type: "item"
+				}
+			]
+			title: "Rock Smash!"
+			x: -1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["3157FAA078ACDDEF"]
+			id: "529EA7ED3DD1AE78"
+			shape: "square"
+			subtitle: "Steam is the energy for the steam age."
+			tasks: [{
+				id: "2E3FADE94C900B9B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_solid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_solid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_liquid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_liquid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_solar_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_solar_boiler"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Boiling Water"
+			x: -1.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["529EA7ED3DD1AE78"]
+			description: ["these are used to compress different items, the main one will be wood pulp into boards for your &9first electronic&r &4circuts&r."]
+			id: "425D729FEBB54464"
+			subtitle: "Smush Smash"
+			tasks: [{
+				id: "685385282FA8CDC0"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_compressor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_compressor"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Compressors"
+			x: 2.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["529EA7ED3DD1AE78"]
+			description: ["Another way to bypass GT tools, it also can turn some things into dust at higher rates or items you &4&ncant&r&r by hand, one of which will be logs for wood pulp, again for your &1first&r &4circuits&r"]
+			id: "6B3BDEA235F2F5DF"
+			subtitle: "Gring, Grind, Toil And Trouble.."
+			tasks: [{
+				id: "3F3C9A75707D8261"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_macerator"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_macerator"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Crushing It!"
+			x: 0.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["529EA7ED3DD1AE78"]
+			description: ["These can be used as a way to bypass the mortar and pestle as well as forming glass into more complex shapes also for &4Circuits&r "]
+			id: "7CC10F95A1FD8A2D"
+			subtitle: "AAAAAAAAAAAA"
+			tasks: [{
+				id: "4700E2DBDB245B7A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_alloy_smelter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_alloy_smelter"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "It Burnssss"
+			x: 1.0d
+			y: -14.5d
+		}
+		{
+			dependencies: [
+				"425D729FEBB54464"
+				"6B3BDEA235F2F5DF"
+			]
+			id: "7A1839ECA1954368"
+			tasks: [
+				{
+					id: "5000DC121019C3F4"
+					item: "gtceu:resin_circuit_board"
+					type: "item"
+				}
+				{
+					id: "006B2A08C869A947"
+					item: "gtceu:resin_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "The start of the zaps"
+			x: 0.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["7CC10F95A1FD8A2D"]
+			id: "7BD161F74459675C"
+			tasks: [{
+				id: "495C84B73CC59FF2"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -17.0d
+		}
+		{
+			dependencies: [
+				"7A1839ECA1954368"
+				"7BD161F74459675C"
+				"1904F2F1A84518EE"
+			]
+			description: ["Your first big step into getting more advanced machines, enabling you to make cheaper recipes for all type of components, as well as no longer having to use those pesky GT tools."]
+			id: "49A4FFDB74B6F305"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "FINALLYYY"
+			tasks: [{
+				id: "4FD12EFCFB46B3E4"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			title: "The First Big Step.."
+			x: 1.0d
+			y: -19.5d
+		}
+		{
+			dependencies: ["6B3BDEA235F2F5DF"]
+			id: "1904F2F1A84518EE"
+			tasks: [{
+				id: "2EEAEEA42F176A4D"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -17.0d
+		}
+		{
+			dependencies: [
+				"46E17C76CFE663CB"
+				"259AA615479A7A28"
+			]
+			description: ["Used to grow plants, as well as trees. (at a slower rate.)"]
+			id: "066906D4E4F3F396"
+			shape: "diamond"
+			subtitle: "Let it grow.."
+			tasks: [{
+				id: "63B8704D703064DE"
+				item: "gtceu:reinforced_farm"
+				type: "item"
+			}]
+			title: "Lorax"
+			x: 3.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["529EA7ED3DD1AE78"]
+			id: "46E17C76CFE663CB"
+			tasks: [
+				{
+					id: "2F731D3F163E4CD8"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "755D8D936C35395A"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["529EA7ED3DD1AE78"]
+			description: ["This multiblock is a furnace that can do 8 recipes in parallel at a shorter time per ingot, you might want to make a few of these."]
+			id: "08762C82578F39A9"
+			shape: "diamond"
+			subtitle: "It Parallels"
+			tasks: [{
+				id: "14AFBDBF65691FB2"
+				item: "gtceu:steam_oven"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["529EA7ED3DD1AE78"]
+			description: ["Same mechanic as the &6Steam Oven.&r"]
+			id: "3ABB6927EC0CA4DC"
+			shape: "diamond"
+			subtitle: "grinding out the materials"
+			tasks: [{
+				id: "25EC88B5B26AF8F8"
+				item: "gtceu:steam_grinder"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["41E81CC9B801147F"]
+			description: ["A mod you will probably want to use, &5Modular Routers&r is also in here for those that truly despise LaserIO but it is something that will be very helpfull with &6automating&r processes."]
+			icon: "laserio:laser_wrench"
+			id: "215D3C36E09561A9"
+			subtitle: "Logistic Headaches"
+			tasks: [{
+				id: "6CCD998CFF96A64E"
+				type: "checkmark"
+			}]
+			title: "Laser IO"
+			x: -0.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["605C6C4A1E76ADD9"]
+			id: "259AA615479A7A28"
+			tasks: [
+				{
+					id: "03D16B6A0BD10343"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "01BF8CECC46A087B"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -9.5d
+		}
+	]
+	title: "The Start Of It All"
+}

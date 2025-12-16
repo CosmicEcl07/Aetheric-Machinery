@@ -1,0 +1,6 @@
+{
+	chapter_groups: [
+		{ id: "3C7CFABE4BC7F6CE", title: "Main Quest Line" }
+		{ id: "50A92A121653C947", title: "Misc" }
+	]
+}
