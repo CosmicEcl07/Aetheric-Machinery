@@ -891,7 +891,7 @@
 				"46E17C76CFE663CB"
 				"259AA615479A7A28"
 			]
-			description: ["Used to grow plants, as well as trees (at a slow rate comparatively)"]
+			description: ["Used to grow plants, as well as trees. (at a slower rate.)"]
 			id: "066906D4E4F3F396"
 			shape: "diamond"
 			subtitle: "Let it grow.."

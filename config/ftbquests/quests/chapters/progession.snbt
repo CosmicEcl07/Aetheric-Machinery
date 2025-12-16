@@ -1,0 +1,64 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "progession"
+	group: "50A92A121653C947"
+	icon: "gtceu:crystal_processor_mainframe"
+	id: "3B462DBB9CA00ED8"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["This is a tab showing the &4&nCurrent&r&r, Progression &9possible&r in the pack (that is &nplanned&r currently)"]
+			icon: "gtceu:trinium_coil_block"
+			id: "31BA286F8065297E"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Huh"
+			tasks: [{
+				id: "7F5EB8C525C97550"
+				type: "checkmark"
+			}]
+			title: "What is this?"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7B27FEDDC63C39C9"]
+			id: "5AC6CF77C19E8C37"
+			tasks: [{
+				id: "443E217D2C02F435"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			title: "LV Ingots"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["31BA286F8065297E"]
+			id: "46DD884916DB1A3F"
+			tasks: [{
+				id: "7D9BE6E1431253D5"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			title: "1st LV Circuit"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["31BA286F8065297E"]
+			id: "7B27FEDDC63C39C9"
+			tasks: [{
+				id: "622AABB3F339598A"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			title: "ULV Ingots"
+			x: 2.0d
+			y: -1.0d
+		}
+	]
+	title: "Progression"
+}
