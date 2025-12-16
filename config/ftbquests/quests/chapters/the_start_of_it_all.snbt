@@ -924,8 +924,10 @@
 		}
 		{
 			dependencies: ["529EA7ED3DD1AE78"]
+			description: ["This multiblock is a furnace that can do 8 recipes in parallel at a shorter time per ingot, you might want to make a few of these."]
 			id: "08762C82578F39A9"
 			shape: "diamond"
+			subtitle: "It Parallels"
 			tasks: [{
 				id: "14AFBDBF65691FB2"
 				item: "gtceu:steam_oven"
@@ -936,8 +938,10 @@
 		}
 		{
 			dependencies: ["529EA7ED3DD1AE78"]
+			description: ["Same mechanic as the &6Steam Oven.&r"]
 			id: "3ABB6927EC0CA4DC"
 			shape: "diamond"
+			subtitle: "grinding out the materials"
 			tasks: [{
 				id: "25EC88B5B26AF8F8"
 				item: "gtceu:steam_grinder"
