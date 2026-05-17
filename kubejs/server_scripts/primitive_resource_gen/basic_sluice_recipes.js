@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
         .duration(time);
 
     event.recipes.gtceu.basic_sluice('basic_dust_sluice')
-        .itemInputs('16x exdeorum:dust')
+        .itemInputs('16x exnihilosequentia:dust')
         .inputFluids('minecraft:water 1600')
         .itemOutputsRanged('minecraft:diamond', 1, 2)
         .itemOutputsRanged('minecraft:emerald', 1, 2)
