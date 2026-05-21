@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('AAA', 'BDB', 'B#B', 'C#C')
             .aisle('AAA', 'BEB', 'BBB', 'CCC')
             .where('A', Predicates.blocks('minecraft:stone_bricks'))
-            .where('B', Predicates.blocks('minecraft:stone'))
+            .where('B', Predicates.blocks('minecraft:tnt'))
             .where('C', Predicates.blocks('minecraft:stone_slab'))
             .where('D', Predicates.blocks('minecraft:campfire'))
             .where('E', Predicates.controller(Predicates.blocks(definition.get())))
