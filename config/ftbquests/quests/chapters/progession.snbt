@@ -10,7 +10,7 @@
 	quests: [
 		{
 			description: ["This is a tab showing the &4&nCurrent&r&r, Progression &9possible&r in the pack (that is &nplanned&r currently)"]
-			icon: "gtceu:trinium_coil_block"
+			icon: "gtceu:superconducting_coil"
 			id: "31BA286F8065297E"
 			shape: "gear"
 			size: 2.0d
@@ -44,8 +44,8 @@
 				type: "item"
 			}]
 			title: "1st LV Circuit"
-			x: -2.0d
-			y: -1.0d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["31BA286F8065297E"]
