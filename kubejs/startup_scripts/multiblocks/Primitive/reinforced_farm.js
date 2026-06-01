@@ -45,6 +45,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("H", Predicates.blocks("minecraft:water"))
             .build())
 
-        .workableCasingRenderer('minecraft:block/stone', 'gtceu:block/machines/cutter', false)
+        .workableCasingModel('minecraft:block/stone', 'gtceu:block/machines/cutter')
 });
 

@@ -28,8 +28,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('E', Predicates.blocks('minecraft:stone')
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1)))
             .build())
-        .workableCasingRenderer('minecraft:block/stone',
-        'gtceu:block/machines/sifter', false)
+        .workableCasingModel('minecraft:block/stone',
+        'gtceu:block/machines/sifter')
+
         .editableUI(
             global.ui_builder({
                 group: 'primitive',
@@ -54,8 +55,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                         {type: 'item', index: 3, pos: [120, 28], texture: GuiTextures.PRIMITIVE_SLOT },
                         {type: 'item', index: 4, pos: [138, 10], texture: GuiTextures.PRIMITIVE_SLOT },
                         {type: 'item', index: 5, pos: [138, 28], texture: GuiTextures.PRIMITIVE_SLOT }
-                        
-                        
+                              
                 ]
 
         }))
