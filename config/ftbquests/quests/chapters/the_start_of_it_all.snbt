@@ -8,18 +8,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "7587B73B299190C5"
-			invisible: true
-			optional: true
-			tasks: [{
-				id: "1817B44D8E45B10B"
-				item: "minecraft:oak_planks"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -1.5d
-		}
-		{
+			dependencies: ["141CD3867082FADB"]
 			id: "233B4294D3292D2C"
 			shape: "gear"
 			size: 1.25d
@@ -30,8 +19,8 @@
 				type: "item"
 			}]
 			title: "Punching Your First Tree!"
-			x: 1.75d
-			y: -2.5d
+			x: 0.25d
+			y: -4.5d
 		}
 		{
 			dependencies: ["233B4294D3292D2C"]
@@ -55,10 +44,11 @@
 				}
 			]
 			title: "Getting String"
-			x: 3.0d
-			y: -3.5d
+			x: 1.5d
+			y: -5.5d
 		}
 		{
+			dependencies: ["141CD3867082FADB"]
 			id: "2CD30778906B4456"
 			shape: "gear"
 			size: 1.25d
@@ -75,8 +65,8 @@
 				type: "item"
 			}]
 			title: "ROCK AND STONEEE"
-			x: 0.25d
-			y: -2.5d
+			x: -1.25d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -96,8 +86,8 @@
 				type: "item"
 			}]
 			title: "HAMMAH!"
-			x: 1.0d
-			y: -4.5d
+			x: -0.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["22E9A0D329C94BE9"]
@@ -117,8 +107,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: -5.0d
+			x: 1.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["0F93DAEE746326E9"]
@@ -130,8 +120,8 @@
 				type: "item"
 			}]
 			title: "EEPY TIMEEE"
-			x: 4.5d
-			y: -5.0d
+			x: 3.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -190,8 +180,8 @@
 				}
 			]
 			title: "Your First Machine"
-			x: 1.0d
-			y: -7.0d
+			x: -0.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["53C628D51F740EAD"]
@@ -226,8 +216,8 @@
 				}
 			]
 			title: "Aguaaleous"
-			x: 2.5d
-			y: -7.0d
+			x: 1.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["2CD30778906B4456"]
@@ -238,8 +228,8 @@
 				type: "item"
 			}]
 			title: "Smoking"
-			x: -1.0d
-			y: -3.5d
+			x: -2.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["0F93DAEE746326E9"]
@@ -249,9 +239,9 @@
 				item: "exnihilosequentia:string_mesh"
 				type: "item"
 			}]
-			title: "Siftin Through The Rough"
-			x: 1.0d
-			y: -5.5d
+			title: "Sifting Through The Rough"
+			x: -0.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["3E6E014831E5F51F"]
@@ -262,8 +252,8 @@
 				item: "minecraft:stone"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -5.0d
+			x: -2.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["5059AAD0321DED07"]
@@ -275,8 +265,8 @@
 				item: "minecraft:sand"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -7.0d
+			x: -5.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["51CAE0F6B2F0DFDE"]
@@ -288,8 +278,8 @@
 				item: "minecraft:gravel"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -7.0d
+			x: -4.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["62F23E179D0C7EC9"]
@@ -301,8 +291,8 @@
 				item: "exnihilosequentia:dust"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -7.0d
+			x: -7.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["5059AAD0321DED07"]
@@ -313,8 +303,8 @@
 				item: "minecraft:raw_iron"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -8.0d
+			x: -4.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["5059AAD0321DED07"]
@@ -325,8 +315,8 @@
 				item: "minecraft:raw_copper"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -9.0d
+			x: -4.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["5059AAD0321DED07"]
@@ -337,8 +327,8 @@
 				item: "gtceu:raw_nickel"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -10.0d
+			x: -4.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["5059AAD0321DED07"]
@@ -349,8 +339,8 @@
 				item: "gtceu:raw_tin"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -11.0d
+			x: -4.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["62F23E179D0C7EC9"]
@@ -361,8 +351,8 @@
 				item: "minecraft:raw_gold"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -8.0d
+			x: -5.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["62F23E179D0C7EC9"]
@@ -373,8 +363,8 @@
 				item: "minecraft:amethyst_shard"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -9.0d
+			x: -5.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["62F23E179D0C7EC9"]
@@ -385,8 +375,8 @@
 				item: "minecraft:prismarine_shard"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -10.0d
+			x: -5.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["62F23E179D0C7EC9"]
@@ -397,8 +387,8 @@
 				item: "minecraft:prismarine_crystals"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -11.0d
+			x: -5.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["79C4EFE4B207EB0E"]
@@ -409,8 +399,8 @@
 				item: "minecraft:redstone"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -9.0d
+			x: -7.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["79C4EFE4B207EB0E"]
@@ -421,8 +411,8 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -11.0d
+			x: -7.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["79C4EFE4B207EB0E"]
@@ -433,8 +423,8 @@
 				item: "minecraft:emerald"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -10.0d
+			x: -7.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["79C4EFE4B207EB0E"]
@@ -445,8 +435,8 @@
 				item: "minecraft:lapis_lazuli"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -8.0d
+			x: -7.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["5DCE4C6F78ECA53C"]
@@ -465,12 +455,14 @@
 				type: "item"
 			}]
 			title: "Fluid Handling"
-			x: 2.5d
-			y: -8.0d
+			x: 1.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["233B4294D3292D2C"]
+			description: ["Put organic matter inside this to slowly make water!"]
 			id: "53C628D51F740EAD"
+			subtitle: "Toil Toil And Bubble or Something.."
 			tasks: [{
 				id: "54C8D00601A9412A"
 				item: {
@@ -482,8 +474,9 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -6.0d
+			title: "Crucibles"
+			x: 1.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["17B2A2EA9A64D435"]
@@ -493,8 +486,8 @@
 				item: "minecraft:clay"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -8.0d
+			x: -2.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["5AF2BE0B6E7264BD"]
@@ -607,11 +600,14 @@
 				}
 			]
 			title: "Your First Tools"
-			x: 1.0d
-			y: -9.5d
+			x: -0.5d
+			y: -11.5d
 		}
 		{
-			dependencies: ["605C6C4A1E76ADD9"]
+			dependencies: [
+				"605C6C4A1E76ADD9"
+				"259AA615479A7A28"
+			]
 			description: ["This is your second machine, primarily used for steel as well as glass, you will probably want to make more then one of these."]
 			id: "1C957A58064E547F"
 			shape: "square"
@@ -621,8 +617,8 @@
 				item: "gtceu:sturdy_kiln"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -11.0d
+			x: -0.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["1C957A58064E547F"]
@@ -632,8 +628,8 @@
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -12.0d
+			x: -1.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["1C957A58064E547F"]
@@ -650,22 +646,33 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: -12.0d
+			x: 0.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["5AF2BE0B6E7264BD"]
-			description: ["Use this + laserIO or Modular Routers to move water automaticlly into your sluices!"]
+			description: [
+				"Use this + laserIO or Modular Routers to move water automaticlly into your sluices! "
+				""
+				"&o&7(you can also just put the infinite water source directly on the hatch)&r&r"
+			]
 			id: "7A479BE92DB60595"
 			subtitle: "put the bucket back whaltu"
-			tasks: [{
-				id: "629D429F7183DF98"
-				item: "watersources:water_source_tier_1"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "629D429F7183DF98"
+					item: "watersources:water_source_tier_1"
+					type: "item"
+				}
+				{
+					id: "72124C16FF356968"
+					item: "gtceu:ulv_input_hatch"
+					type: "item"
+				}
+			]
 			title: "Wamter"
-			x: -0.5d
-			y: -7.0d
+			x: -2.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["605C6C4A1E76ADD9"]
@@ -678,8 +685,8 @@
 				id: "5F653243FD506F9E"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: -12.5d
+			x: -0.5d
+			y: -14.5d
 		}
 		{
 			dependencies: ["605C6C4A1E76ADD9"]
@@ -699,8 +706,8 @@
 				}
 			]
 			title: "Rock Smash!"
-			x: -1.0d
-			y: -11.5d
+			x: -2.5d
+			y: -13.5d
 		}
 		{
 			dependencies: ["3157FAA078ACDDEF"]
@@ -744,8 +751,8 @@
 				type: "item"
 			}]
 			title: "Boiling Water"
-			x: -1.0d
-			y: -13.5d
+			x: -2.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["529EA7ED3DD1AE78"]
@@ -773,8 +780,8 @@
 				type: "item"
 			}]
 			title: "Compressors"
-			x: 2.0d
-			y: -14.5d
+			x: 0.5d
+			y: -16.5d
 		}
 		{
 			dependencies: ["529EA7ED3DD1AE78"]
@@ -802,8 +809,8 @@
 				type: "item"
 			}]
 			title: "Crushing It!"
-			x: 0.0d
-			y: -14.5d
+			x: -1.5d
+			y: -16.5d
 		}
 		{
 			dependencies: ["529EA7ED3DD1AE78"]
@@ -831,8 +838,8 @@
 				type: "item"
 			}]
 			title: "It Burnssss"
-			x: 1.0d
-			y: -14.5d
+			x: -0.5d
+			y: -16.5d
 		}
 		{
 			dependencies: [
@@ -853,8 +860,8 @@
 				}
 			]
 			title: "The start of the zaps"
-			x: 0.0d
-			y: -17.0d
+			x: -1.5d
+			y: -19.0d
 		}
 		{
 			dependencies: ["7CC10F95A1FD8A2D"]
@@ -864,8 +871,8 @@
 				item: "gtceu:vacuum_tube"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -17.0d
+			x: -0.5d
+			y: -19.0d
 		}
 		{
 			dependencies: [
@@ -884,8 +891,8 @@
 				type: "item"
 			}]
 			title: "The First Big Step.."
-			x: 1.0d
-			y: -19.5d
+			x: -0.5d
+			y: -21.5d
 		}
 		{
 			dependencies: ["6B3BDEA235F2F5DF"]
@@ -895,8 +902,8 @@
 				item: "gtceu:resistor"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -17.0d
+			x: 0.5d
+			y: -19.0d
 		}
 		{
 			dependencies: [
@@ -913,8 +920,8 @@
 				type: "item"
 			}]
 			title: "Lorax"
-			x: 3.0d
-			y: -11.5d
+			x: 1.5d
+			y: -13.5d
 		}
 		{
 			dependencies: ["529EA7ED3DD1AE78"]
@@ -932,8 +939,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: -13.5d
+			x: 1.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["529EA7ED3DD1AE78"]
@@ -946,8 +953,8 @@
 				item: "gtceu:steam_oven"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -13.0d
+			x: -3.5d
+			y: -15.0d
 		}
 		{
 			dependencies: ["529EA7ED3DD1AE78"]
@@ -960,12 +967,12 @@
 				item: "gtceu:steam_grinder"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -14.0d
+			x: -3.5d
+			y: -16.0d
 		}
 		{
 			dependencies: ["41E81CC9B801147F"]
-			description: ["A mod you will probably want to use, &5Modular Routers&r is also in here for those that truly despise LaserIO but it is something that will be very helpfull with &6automating&r processes."]
+			description: ["A mod you will probably want to use, &5Modular Routers&r is also in here for those that truly despise LaserIO &e&oBOTH&r&r are going to be very helpfull with &6automating&r processes."]
 			icon: "laserio:laser_wrench"
 			id: "215D3C36E09561A9"
 			subtitle: "Logistic Headaches"
@@ -974,8 +981,8 @@
 				type: "checkmark"
 			}]
 			title: "Laser IO"
-			x: -0.5d
-			y: -9.5d
+			x: -2.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["605C6C4A1E76ADD9"]
@@ -993,8 +1000,37 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: -9.5d
+			x: 1.5d
+			y: -11.5d
+		}
+		{
+			description: [
+				"Hello! a few things about this pack.."
+				""
+				"&61&r- It is meant to be played in peaceful as there is no meaningful way of getting food either then vanilla methods."
+				""
+				"&b2&r - This is a Heavy WIP Pack as you may be able guess by the version, so any bugs you may find would be appreciated if they are reported to the discord to help further development."
+				""
+				"&53&r - Any suggestions may also be submitted to the same place!"
+				""
+				"&44&r - The &dCURRENT&r version only goes to LV as there is no way to currently source MVs main material."
+				""
+				"Other then that have fun and good luck! "
+				""
+				"&8(P.S)this pack is meant to have an easy early game scaling harder the farther you go.&r"
+			]
+			icon: "minecraft:nether_star"
+			id: "141CD3867082FADB"
+			shape: "diamond"
+			size: 2.5d
+			subtitle: "Version Alpha-2!"
+			tasks: [{
+				id: "1567C80A2318E602"
+				title: "Welcome!"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -2.5d
 		}
 	]
 	title: "The Start Of It All"

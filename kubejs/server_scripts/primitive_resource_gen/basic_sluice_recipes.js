@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    const time = 0.5*20
+    const time = 4*20
 
     event.recipes.gtceu.basic_sluice('basic_gravel_sluice')
         .itemInputs('16x minecraft:gravel')
@@ -27,6 +27,7 @@ ServerEvents.recipes(event => {
         .itemOutputsRanged('minecraft:emerald', 1, 2)
         .itemOutputsRanged('minecraft:redstone', 2, 5)
         .itemOutputsRanged('minecraft:lapis_lazuli', 3, 6)
+        .itemOutputsRanged('gtceu:small_sulfur_dust', 1, 3)
         .duration(time);
 
     event.recipes.gtceu.basic_sluice('basic_dirt_sluice')

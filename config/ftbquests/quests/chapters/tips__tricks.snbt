@@ -1,0 +1,151 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tips__tricks"
+	group: "50A92A121653C947"
+	icon: "ae2:certus_quartz_wrench"
+	id: "328F0CA7F7E23189"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5B7C1DEB93E932D6"]
+			description: [
+				"Effortless Building is a mod in this pack that allows you to build &aeasier&r."
+				""
+				" by hold &4&lALT&r&r and clicking an option, you may build more then one block at a time, you can also make upgrades to upgrade the range up to 64x64 Dimensions."
+			]
+			id: "75F07F8A9E22B19E"
+			rewards: [
+				{
+					id: "2F6FE0F16312B057"
+					item: "effortlessbuilding:muscles"
+					type: "item"
+				}
+				{
+					id: "4551E02BBA278FFF"
+					item: "effortlessbuilding:elastic_hand"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Wow! No builders wands???"
+			tasks: [
+				{
+					id: "67E795FC8E517D30"
+					item: "effortlessbuilding:reach_upgrade1"
+					type: "item"
+				}
+				{
+					id: "28726001FFD0E68F"
+					item: "effortlessbuilding:reach_upgrade2"
+					type: "item"
+				}
+				{
+					id: "0B3340E1C9FFB4C7"
+					item: "effortlessbuilding:reach_upgrade3"
+					type: "item"
+				}
+			]
+			title: "Effortless Building"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B7C1DEB93E932D6"]
+			id: "32C0CD7BBED290EE"
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Press Shift, You Remember Skyblock Dont You?"
+			tasks: [{
+				id: "7501AB7F46820841"
+				item: "minecraft:oak_sapling"
+				type: "item"
+			}]
+			title: "Twerk To Grow"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			description: ["Quality of life is something i want to be abundant in this pack (within reason) feel free to suggest the mods that i may be missing the discord!"]
+			icon: "gtceu:rhodium_gear"
+			id: "5B7C1DEB93E932D6"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "66F007E577C6D429"
+				title: "Hey!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5B7C1DEB93E932D6"]
+			id: "0D0D33D4CD39C2F9"
+			shape: "diamond"
+			subtitle: "Combine these together"
+			tasks: [
+				{
+					id: "1EE4551E6B625783"
+					item: "toolbelt:belt"
+					type: "item"
+				}
+				{
+					id: "67695F5073249DEB"
+					item: "toolbelt:pouch"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5B7C1DEB93E932D6"]
+			id: "731DEF0F44A534BC"
+			shape: "diamond"
+			subtitle: "Once you get power these might be useful..."
+			tasks: [{
+				id: "14614DCF4EC3018A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_building"
+							}
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_exchanging"
+							}
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_copy_paste"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_cut_paste"
+								tag: {
+									pastereplace: 1b
+								}
+							}
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_destruction"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Building Gadgets"
+			x: 2.0d
+			y: -2.0d
+		}
+	]
+	title: "Tips and Tricks"
+}
