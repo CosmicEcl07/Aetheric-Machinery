@@ -25,5 +25,9 @@ ServerEvents.recipes(event => {
     // ModularRouters Removals
     event.remove('modularrouters:blank_module');
 
-
+    // Effortless Building Removals
+    event.remove('effortlessbuilding:reach_upgrade1');
+    event.remove('effortlessbuilding:reach_upgrade2');
+    event.remove('effortlessbuilding:reach_upgrade3');
+    
 });
