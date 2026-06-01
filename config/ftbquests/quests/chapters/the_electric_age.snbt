@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [{
 		dependencies: ["49A4FFDB74B6F305"]
+		description: ["All these machines are &nvital&r for lowering your cost in making new machines."]
 		id: "7DEF6D5DD2FA479A"
 		shape: "gear"
 		size: 2.0d

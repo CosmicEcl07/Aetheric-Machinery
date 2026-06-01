@@ -22,5 +22,8 @@ ServerEvents.recipes(event => {
     // LaserIO Removals
     event.remove('laserio:logic_chip_raw');
 
+    // ModularRouters Removals
+    event.remove('modularrouters:blank_module');
+
 
 });

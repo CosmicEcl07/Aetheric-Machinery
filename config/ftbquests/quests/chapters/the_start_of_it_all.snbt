@@ -8,18 +8,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "7587B73B299190C5"
-			invisible: true
-			optional: true
-			tasks: [{
-				id: "1817B44D8E45B10B"
-				item: "minecraft:oak_planks"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -1.5d
-		}
-		{
 			id: "233B4294D3292D2C"
 			shape: "gear"
 			size: 1.25d
@@ -965,7 +953,7 @@
 		}
 		{
 			dependencies: ["41E81CC9B801147F"]
-			description: ["A mod you will probably want to use, &5Modular Routers&r is also in here for those that truly despise LaserIO but it is something that will be very helpfull with &6automating&r processes."]
+			description: ["A mod you will probably want to use, &5Modular Routers&r is also in here for those that truly despise LaserIO &e&oBOTH&r&r are going to be very helpfull with &6automating&r processes."]
 			icon: "laserio:laser_wrench"
 			id: "215D3C36E09561A9"
 			subtitle: "Logistic Headaches"
