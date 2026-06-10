@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
         {type:'gtceu:glass_dust', time: 8, output: 'minecraft:glass'}
     ].forEach(ingot => {
 
-    event.recipes.gtceu.sturdy_kiln('basic_' + ingot.type + '_kiln')
+    event.recipes.gtceu.sturdy_kiln(ingot.type)
 
         .itemInputs(ingot.type, '2x minecraft:charcoal')
         .itemOutputs(ingot.output)
