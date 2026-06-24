@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
 
     ].forEach(plant => {
     
-    event.recipes.gtceu.reinforced_farm('basic_' + plant.output + '_farm')
+    event.recipes.gtceu.reinforced_farm(plant.output)
         .notConsumable(plant.seed)
         .itemOutputs(Item.of(plant.output, plant.quant))
         .chancedOutput(plant.secoutput, 5000, 0)
@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         {seed:'gtceu:rubber_sapling', output: 'gtceu:rubber_log', secoutput: 'gtceu:sticky_resin', quant: 8}
 
     ].forEach(tree => {
-        event.recipes.gtceu.reinforced_farm('basic_' + tree.output + '_farm')
+        event.recipes.gtceu.reinforced_farm(tree.output)
         .notConsumable(tree.seed)
         .itemOutputs(Item.of(tree.output, tree.quant))
         .itemOutputsRanged(tree.secoutput, 1,4)

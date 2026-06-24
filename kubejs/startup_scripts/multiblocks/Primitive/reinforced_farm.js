@@ -7,10 +7,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.BATH)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW , FillDirection.LEFT_TO_RIGHT);
 
-    event.create('reinforced_tree_farm')
+    event.create('wild_garden')
         .category('primitive')
         .setEUIO('in')
-        .setMaxIOSize(1, 4, 0, 0)
+        .setMaxIOSize(2, 9, 0, 0)
         .setSound(GTSoundEntries.BATH)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW , FillDirection.LEFT_TO_RIGHT);
     
@@ -19,7 +19,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('reinforced_farm', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('reinforced_farm')
+        .recipeTypes(['reinforced_farm', 'wild_garden'])
         .appearanceBlock(() => Block.getBlock('minecraft:stone'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("ABBBBBBBABBBBBBBA", "CDDDDDDDCDDDDDDDC", "#################", "#################", "#################", "#################", "#################", "#################", "#################") 
