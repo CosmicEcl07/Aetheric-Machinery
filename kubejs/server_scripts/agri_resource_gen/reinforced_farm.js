@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    
     [
         // Seeds for Plants
         {seed:'minecraft:wheat_seeds', output: 'minecraft:wheat', secoutput: 'minecraft:wheat_seeds', quant: 16},
