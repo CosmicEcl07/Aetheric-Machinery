@@ -6,43 +6,24 @@
 !kubejs/
 !mods/
 
-# Ignore All But These Core Files
+# Un-Ignore These Core Files
 
 !.gitignore
+
+# Re-Ignore these Sub Directories
+
+config/xaero/*
+config/fancymenu/*
+config/jei/*
+config/defaultworldtype/*
+
+# Re-Ignore these Sub Files
+
+config/xaero*
+kubejs/server_scripts/mbhelper.js
 config/chloride-client.json
 config/exnihilosequentia-common.toml
 config/invtweaks-client.toml
 config/iris_shader_folder.properties
 config/squatgrow-common.yaml
 config/waystones-common.toml
-config/xaerohud.txt
-config/xaeropatreon.txt
-config/defaultworldtype/biomes.txt
-config/defaultworldtype/client-config-1.toml.bak
-config/fancymenu/ui_themes/cherry_blossom.json
-config/fancymenu/ui_themes/cozy_campfire.json
-config/fancymenu/ui_themes/dark_high_contrast.json
-config/fancymenu/ui_themes/light_high_contrast.json
-config/fancymenu/ui_themes/pumpkin_soup.json
-config/fancymenu/ui_themes/purple_void.json
-config/fancymenu/ui_themes/spooky_season.json
-config/jei/world/local/New_World/bookmarks.ini
-config/jei/world/local/New_World/lookupHistory.ini
-config/jei/world/local/New_Worldzeee/bookmarks.ini
-config/jei/world/local/New_Worldzeee/lookupHistory.ini
-config/xaero/lib/client.cfg
-config/xaero/lib/common.cfg
-config/xaero/lib/profiles/default.cfg
-config/xaero/lib/server_profiles/default.cfg
-config/xaero/minimap/client.cfg
-config/xaero/minimap/common.cfg
-config/xaero/minimap/default_radar_categories_client.json
-config/xaero/minimap/default_radar_categories_server.json
-config/xaero/minimap/profiles/default.cfg
-config/xaero/minimap/profiles/info_display_config/default.cfg.txt
-config/xaero/minimap/server_profiles/default.cfg
-config/xaero/world-map/client.cfg
-config/xaero/world-map/common.cfg
-config/xaero/world-map/profiles/default.cfg
-config/xaero/world-map/server_profiles/default.cfg
-kubejs/server_scripts/mbhelper.js
