@@ -6,6 +6,17 @@
 !kubejs/
 !mods/
 
-# Ignore All But These Core Files
+# Un-Ignore These Core Files
 
 !.gitignore
+
+# Re-Ignore these Sub Directories
+
+config/xaero/*
+config/fancymenu/*
+config/jei/*
+config/defaultworldtype/*
+
+# Re-Ignore these Sub Files
+
+config/xaero*
