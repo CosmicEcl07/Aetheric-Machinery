@@ -20,3 +20,10 @@ config/defaultworldtype/*
 # Re-Ignore these Sub Files
 
 config/xaero*
+kubejs/server_scripts/mbhelper.js
+config/chloride-client.json
+config/exnihilosequentia-common.toml
+config/invtweaks-client.toml
+config/iris_shader_folder.properties
+config/squatgrow-common.yaml
+config/waystones-common.toml
