@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         .itemOutputsRanged('minecraft:raw_iron', 3, 6)
         .itemOutputsRanged('minecraft:raw_copper', 2, 4)
         .itemOutputsRanged('gtceu:raw_tin', 2, 3)
-        .itemOutputsRanged('gtceu:raw_nickel', 2, 3)
+        .itemOutputsRanged('gtceu:raw_sphalerite', 2, 3)
         .duration(time);
 
     event.recipes.gtceu.basic_sluice('basic_sand_sluice')
